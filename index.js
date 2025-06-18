@@ -91,7 +91,7 @@ button.addEventListener("click", () => {
 
 // Active Navbutton on click and scroll 
 
-const allNavBtn = document.querySelectorAll(".activate-nav")
+const allNavBtn = document.querySelectorAll(".active-nav")
 
 const allNavLinks = document.querySelectorAll("header .nav-item a")
 
@@ -109,6 +109,8 @@ const sectionObserve = new IntersectionObserver((nIcon) => {
                     document.getElementById(target).classList.add("active")
                 }
             }
+
+            console.log(target);
         };
     });
 }, { threshold: .4 });
